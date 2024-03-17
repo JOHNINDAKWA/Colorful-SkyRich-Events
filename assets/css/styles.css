@@ -1158,9 +1158,25 @@ margin-bottom: 50px;
         font-size: 0.5em;
     }
 
+
     .slider-loader{
-        bottom: 20px;
+        
+        bottom: 80px;
+        right: 50px;
+
+        margin-bottom: 20px;
     }
+
+    .slider-loader li a{
+        font-size: 1em;
+
+    }
+    
+    .slider-loader li a.active,
+    .slider-loader li a:hover{
+        font-size: 2em;
+    }
+    
     .share{
         left: 5px;
     }
@@ -1349,3 +1365,23 @@ margin-bottom: 50px;
  
 }
 
+@media (max-width: 1000px){
+    header{
+        
+    padding: 10px 10px;
+    }
+
+    .menu .open { 
+        display: block; 
+    }
+
+    header .nav{
+        display: none;
+    }
+
+    header.active{
+        background: transparent;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    }
+
+}

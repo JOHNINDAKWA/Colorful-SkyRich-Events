@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyRich Events</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="shortcut icon" href="./assets/images/skyrich Logo.png" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preload" as="image" href="./assets/images/about3.jpeg">
+    <link rel="preload" as="image" href="./assets/images/decor2.jpg">
+    <link rel="preload" as="image" href="./assets/images/banner-10.jpg">
+    <link rel="preload" as="image" href="./assets/images/wedding-1.jpg">    
+    <link rel="preload" as="image" href="./assets/images/wedding-2.jpg">
+
+</head>
+<body>
+
+<header >
+    <a href="/" class="logo">SkyRich Events</a>
+    <a href="#" class="menu" onclick="toggleMenu();">
+        <ion-icon class="open" name="menu-outline"> </ion-icon>
+        <ion-icon class="close" name="close-outline"></ion-icon>
+    </a>
+
+    <ul class="nav">
+        <li><a href="#" class="nav-btn active" onclick="resetHeader"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li><a href="#" class="nav-btn" data-target="about">About</a></li>
+        <li><a href="#" class="nav-btn" data-target="services">Services</a></li>
+        <li><a href="#" class="nav-btn" data-target="portfolio">Portfolio</a></li>
+        <li><a href="#" class="nav-btn" data-target="contact">Contact Us</a></li>
+        
+        <li><a href="#" class="nav-btn book-now" style="margin-left: 6rem;" data-target="booking">Book Now</a></li>
+    </ul>
+
+</header>
+
+ <!-- Mobile Navigation -->
+<ul class="nav-mobile">
+    <li>
+        <a class="nav-btn active" href="/" onclick="resetHeader();">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+    </li>
+    <li>
+        <a class="nav-btn" href="#" data-target="about">about</a>
+    </li>
+    <li>
+        <a class="nav-btn" href="#" data-target="services">services</a>
+    </li>
+    <li>
+        <a class="nav-btn" href="#" data-target="portfolio">portfolio
+    </li>
+    <li>
+        <a class="nav-btn" href="#" data-target="contact">contact</a>
+    </li>
+
+    <li class="book-now">
+        <a class="nav-btn" href="#" data-target="booking">Book Now</a>
+    </li>
+</ul>
+
+
+
+<!-- banner -->
+
+    <div class="banner container-fluid">
+
+        <div class="bg-slide slide-1 active">
+            <div class="content">
+                <h1>Event Alchemist</h1>
+                <h2>Crafting Experiences Beyond Imagination</h2>
+                <p>Unleash the magic of unforgettable events where every detail is meticulously crafted to transcend reality. Join us in weaving dreams into reality.</p>
+                <h3>Clients and Partners</h3>
+            </div>
+            
+            <div class="circle bg">
+                <img src="./assets/images/banner-10.jpg" alt="">
+                <div class="circle large">
+                    <img src="./assets/images/banner-10.jpg" alt="">
+                    <div class="circle small">
+                        <img src="./assets/images/banner-10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-slide slide-2">
+            <div class="content">
+                <h1>Epicenter of Extravaganza</h1>
+                <h2>Where Spectacles Meet Spectators</h2>
+                <p>Immerse yourself in a world of awe-inspiring spectacles and immersive experiences. Get ready to witness the extraordinary unfold before your eyes.</p>
+                <h3>Clients and Partners</h3>
+            </div>
+            
+            
+            
+            <div class="circle bg">
+                <img src="./assets/images/wedding-1.jpg" alt="">
+                <div class="circle large">
+                    <img src="./assets/images/wedding-1.jpg" alt="">
+                    <div class="circle small">
+                        <img src="./assets/images/wedding-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+                
+        <div class="bg-slide slide-3">
+            <div class="content">
+                <h1>Innovation Oasis</h1>
+                <h2>Reimagining Events, Redefining Moments</h2>
+                <p>Dive into a realm of innovation where events are not just planned but envisioned. Experience the art of redefining moments and creating timeless memories.</p>
+                <h3>Clients and Partners</h3>
+            </div>
+            
+            <div class="circle bg">
+                <img src="./assets/images/banner.jpg" alt="">
+                <div class="circle large">
+                    <img src="./assets/images/banner.jpg" alt="">
+                    <div class="circle small">
+                        <img src="./assets/images/banner.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="slider-loader">
+            <li><a class="slide-btn active" data-target="slide-1">1</a></li>
+            <li><a class="slide-btn" data-target="slide-2">2</a></li>
+            <li><a class="slide-btn" data-target="slide-3">3</a></li>
+        </ul>
+
+        <div class="share">
+            <p>SkyRich</p>
+            <a href="#"><ion-icon name="share-social-outline"></ion-icon></a>
+        </div>
+
+        
+        <div class="banner-logo">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+
+        <div class="lead">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <defs>
+                <path
+                    id="circle"
+                    d="
+                    M 50, 50
+                    m-37, 0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0"
+                    />
+                </defs>
+                <text font-size="17">
+                <textPath xlink:href="#circle">
+                Magical, Memorable....and....Perfection
+                </textPath>
+                </text>
+            </svg>
+            <a class="move-down" onclick="initNavigation();"> 
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+            </div>
+
+    </div>
+
+<main>
+    
+    <!---------------------------- About-------------------------------- -->
+    <section class="about" id="about">
+
+        <div class="container">
+            <div class="row">
+                <h1>About Us</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-box">
+                        <img src="./assets/images/about-marked1.jpeg" alt="" class="ing-fluid" />
+                        <img src="./assets/images/onsite.jpg" alt="" class="corner-img" />
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="./assets/images/logo.png" alt="" class="section-bg-img">
+                    <h4>Where Dreams Become Events...</h4>
+                    <p>SkyRich Events is a premier event management company dedicated to crafting unforgettable experiences. 
+                        With a passion for creativity and a commitment to excellence, we specialize in curating events that leave
+                         lasting impressions. From corporate gatherings to private celebrations, we elevate every occasion with meticulous planning, 
+                         innovative design, and seamless execution.</p>
+                    <p>At SkyRich Events, <span style="font-family: var(--cursive); font-size: larger; font-weight: 600;">Our Mission</span> 
+                        is to make every event memorable.We strive to exceed our clients' expectations by delivering unparalleled service, personalized attention, and exceptional experiences. 
+                         With creativity as our cornerstone and professionalism as our guide, we aim to transform visions into reality and create moments that
+                          inspire and delight.</p>
+                    <a href="#" class="section-btn">Discover More</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="reason">
+            <div class="row">
+                <h1>Why We are the best.</h1>
+            </div>
+
+            
+      <div class="service has-bg-image" aria-labelledby="service-label"
+      style="background-image: url('./assets/images/service-bg.jpg')">
+      <div class="container">
+
+
+        <ul class="service-list">
+
+          <li>
+            <div class="service-card">
+
+              <figure class="card-icon">
+                <img src="./assets/images/dedication.png" width="130" height="130" loading="lazy" alt="Dedication">
+              </figure>
+
+              <h3 class="h3 card-title">Dedication</h3>
+
+              <p class="card-text">
+                Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
+              </p>
+
+              
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <figure class="card-icon">
+                <img src="./assets/images/professionalism.png" width="130" height="130" loading="lazy" alt="Professionalism">
+              </figure>
+
+              <h3 class="h3 card-title">Professionalism</h3>
+
+              <p class="card-text">
+                Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
+              </p>
+
+              
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <figure class="card-icon">
+                <img src="./assets/images/personalized.png" width="130" height="130" loading="lazy" alt="Personalized Service">
+              </figure>
+
+              <h3 class="h3 card-title">Personalized Service</h3>
+
+              <p class="card-text">
+                Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
+              </p>
+
+              
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <figure class="card-icon" style="border-radius: 50%;">
+                <img src="./assets/images/quality.png" width="130" height="130" loading="lazy"
+                  alt="Exceptional Quality">
+              </figure>
+
+              <h3 class="h3 card-title">Exceptional Quality</h3>
+
+              <p class="card-text">
+                Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
+              </p>
+
+              
+
+            </div>
+          </li>
+
+          <li class="service-banner">
+            <img src="./assets/images/balloon.png" width="646" height="580" loading="lazy" alt="Red Car"
+              class="move-anim">
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <figure class="card-icon">
+                <img src="./assets/images/creativity.png" width="130" height="130" loading="lazy"
+                  alt="Creativity">
+              </figure>
+
+              <h3 class="h3 card-title">Creativity</h3>
+
+              <p class="card-text">
+                Autem velaum iure reare aenderit rui in ea roluptate esse ruam moles
+              </p>
+
+              
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+           
+            </div>
+        </div>
+    </section>
+
+
+        <!---------------------------- Services-------------------------------- -->
+        <section class="services" id="services">
+
+        <div class="row">
+            <h1>Our Services</h1>
+        </div>
+
+        <div class="row row-next">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="./assets/images/service1.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4>Event Planning</h4>
+                        <p>
+                            From concept development to logistics management, our experienced team handles every aspect of event planning with 
+                            precision and care. Whether it's a corporate conference, product launch, or intimate gathering.
+                        </p>
+                        <a href="#" class="section-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="./assets/images/decor2.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4>Design and Decor</h4>
+                        <p>
+                            Crafting immersive environments that mirror clients' visions, we excel in innovative décor, lighting, and thematic elements, 
+                            enhancing event ambiance with personalized touches.
+                        </p>
+                        <a href="#" class="section-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="./assets/images/entaa.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4>Entertainment</h4>
+                        <p>
+                            "Elevate your event with our curated entertainment, from live performances to interactive experiences. 
+                            Collaborating with talented artists ensures captivating moments and lasting impressions."
+                        </p>
+                        <a href="#" class="section-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row row-next">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="./assets/images/vendor3.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4>Vendor Management</h4>
+                        <p>
+                            With our trusted vendor network, we handle event essentials seamlessly. 
+                            From catering to audiovisuals, we manage contracts, deliveries, and relationships for a smooth execution from start to finish.
+                        </p>
+                        <a href="#" class="section-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="./assets/images/cood.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4>On-Site Coordination</h4>
+                        <p>
+                            Our dedicated team ensures seamless operations on your event day. From setup and guest coordination to troubleshooting,
+                             we provide comprehensive on-site support for a flawless, memorable experience.
+                        </p>
+                        <a href="#" class="section-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="catalogue">
+        <div class="row" style="margin-top: 3rem;">
+            <h1>Our Event Catalogue</h1>
+        </div>
+
+        <div class="globe">
+
+            <div class="catalogue-details">
+                <img src="./assets/images/globe-1.jpg" alt="">
+                <h3>Corporate Events</h3>
+                <p>From conferences and seminars to corporate retreats and team-building activities, we specialize 
+                    in creating impactful and memorable experiences that reflect your company's brand and objectives.</p>
+                    <a href="" class="catalogue-btn">Book Now</a>
+            </div>
+            
+            <div class="catalogue-details">
+                <img src="./assets/images/globe-13.jpg" alt="">
+                <h3>Weddings</h3>
+                <p>Whether it's a traditional wedding, modern celebration, or destination wedding,
+                     we ensure that every detail is perfect, from venue selection to floral arrangements and entertainment.</p>
+                     <a href="" class="catalogue-btn">Book Now</a>
+            </div>
+
+            <div class="catalogue-details">
+                <img src="./assets/images/globe-21.jpg" alt="">
+                <h3>Private Parties</h3>
+                <p>Whether its a milestone birthday, anniversary celebration, or holiday
+                 gathering, our team will transform your private event into an unforgettable occasion. </p>
+                 <a href="" class="catalogue-btn">Book Now</a>
+            </div>
+
+            <div class="catalogue-details">
+                <img src="./assets/images/globe-15.jpg" alt="">
+                <h3>Product Launches</h3>
+                <p>Make a lasting impression on your audience with a memorable product launch event designed to showcase your 
+                    brand and captivate your target market. From venue selection to promotional activities.</p>
+                    <a href="" class="catalogue-btn">Book Now</a>
+            </div>
+
+            <div class="catalogue-details">
+                <img src="./assets/images/globe-16.jpg" alt="">
+                <h3>Charity Galas</h3>
+                <p>Host an elegant and impactful charity gala with our expert event planning and coordination services.
+                     We'll work closely with your organization to create a memorable fundraising.</p>
+                     <a href="" class="catalogue-btn">Book Now</a>
+                </div>
+
+                <div class="catalogue-details">
+                    <img src="./assets/images/globe-17.jpg" alt="">
+                    <h3>Festivals and Celebrations</h3>
+                    <p>From cultural festivals and community celebrations to holiday events and seasonal festivities, we plan and 
+                        execute large-scale events that bring people together in a spirit of joy and camaraderie</p>
+                        <a href="" class="catalogue-btn">Book Now</a>
+                </div>
+
+                <div class="catalogue-details">
+                    <img src="./assets/images/globe-1.jpg" alt="">
+                        <h3>Concerts and Music Events</h3>
+                        <p>Whether you're planning a concert, music festival, or live performance, our team has the expertise and 
+                            resources to create an immersive and unforgettable experience for artists and audiences alike.</p>
+                             <a href="" class="catalogue-btn">Book Now</a>
+                    </div>
+
+                    <div class="catalogue-details">
+                        <img src="./assets/images/globe-5.jpg" alt="">
+                            <h3>Fashion Shows and Runway Events</h3>
+                            <p>Showcase the latest trends and designs with a stylish and sophisticated fashion show curated by 
+                                our experienced event planners. From venue selection to model casting.</p>
+
+                                <a href="" class="catalogue-btn">Book Now</a>
+                            
+                        </div>
+
+                        <div class="catalogue-details">
+                            <img src="./assets/images/globe-4.jpg" alt="">
+                                <h3>Exhibitions and Trade Shows</h3>
+                                <p>Maximize your presence at industry exhibitions and trade shows with our 
+                                    comprehensive event management services. From booth design and setup to promotional activities.</p>
+                                    <a href="" class="catalogue-btn">Book Now</a>
+                                </div>
+
+                                <div class="catalogue-details">
+                                    <img src="./assets/images/globe-14.jpg" alt="">
+                                    <h3>Cultural and Artistic Events</h3>
+                                    <p>Celebrate the arts and culture with a curated event that showcases talent, creativity,
+                                         and diversity. Whether it's an art exhibition, film screening.</p>
+                                         <a href="" class="catalogue-btn">Book Now</a>
+                                </div>
+        </div>
+    </div>
+
+    </section>
+            <!---------------------------- Portfolio-------------------------------- -->
+    <section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="row">
+        <h1>Our Portfolio</h1>
+        </div>
+        <ul id="portfolio-filters" class="d-flex justify-content-center">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-wedding">Wedding</li>
+            <li data-filter=".filter-party">Parties</li>
+            <li data-filter=".filter-bridal">Bridal Shower</li>
+            <li data-filter=".filter-festival">Festivals</li>
+            <li data-filter=".filter-fashion">Fashion</li>
+        </ul>
+
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wed.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 1</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wed.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-party">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding2.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Private Party</h4>
+                    <p>Private Party</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding2.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Private Party 2"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding3.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 3</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding3.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding5.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 4</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding5.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding6.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 5</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding6.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 2"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding7.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 6</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding7.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding9.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 7</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding9.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/wedding12.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Wedding Event 3</h4>
+                    <p>Wedding Event</p>
+                    <a 
+                        href="./assets/images/portfolio/wedding12.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Wedding Event 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-party">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/birthday.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Birthday Party</h4>
+                    <p>Birthday Party</p>
+                    <a 
+                        href="./assets/images/portfolio/birthday.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Birthday Party 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-party">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/birthday3.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Birthday Party</h4>
+                    <p>Birthday Party</p>
+                    <a 
+                        href="./assets/images/portfolio/birthday3.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Birthday Party 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-bridal">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/bridalshower.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Bridal Shower 1</h4>
+                    <p>Bridal Shower</p>
+                    <a 
+                        href="./assets/images/portfolio/bridalshower.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Bridal Shower 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-bridal">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/bridalshower1.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Bridal Shower 2</h4>
+                    <p>Bridal Shower</p>
+                    <a 
+                        href="./assets/images/portfolio/bridalshower1.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Bridal Shower 2"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-party">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/corporate.png"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Corporate Event1 1</h4>
+                    <p>Corporate Event</p>
+                    <a 
+                        href="./assets/images/portfolio/corporate.png" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Corporate Event 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fashion">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/fashion.png"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Fashion 1</h4>
+                    <p>Fashion </p>
+                    <a 
+                        href="./assets/images/portfolio/fashion.png" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Fashion 1"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fashion">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/fashion2.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Fashion 2</h4>
+                    <p>Fashion </p>
+                    <a 
+                        href="./assets/images/portfolio/fashion2.png" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Fashion 2"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fashion">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/fashion3.png"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Fashion 3</h4>
+                    <p>Fashion </p>
+                    <a 
+                        href="./assets/images/portfolio/fashion3.png" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Fashion 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fashion">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/fashion5.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Fashion 4</h4>
+                    <p>Fashion </p>
+                    <a 
+                        href="./assets/images/portfolio/fashion5.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Fashion 4"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-festival">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/music.2.png"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Music Event 1</h4>
+                    <p>Music Event </p>
+                    <a 
+                        href="./assets/images/portfolio/music.2.png" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Music Event"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-festival">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/music.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Music Event 2</h4>
+                    <p>Music Event </p>
+                    <a 
+                        href="./assets/images/portfolio/music.jpg"
+                        class="portfolio-lightbox preview-link"
+                        title="Music Event 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-festival">
+                <div class="portfolio-img">
+                    <img src="./assets/images/portfolio/music1.jpg"  class="img-fluid" alt="">
+                </div>
+                <div class="portfolio-info">
+                    <h4>Music Event 3</h4>
+                    <p>Music Event </p>
+                    <a 
+                        href="./assets/images/portfolio/music1.jpg" 
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link"
+                        title="Music Event 3"
+                    ><ion-icon name="expand-outline"></ion-icon>
+                </a>
+                <a href="#" class="details-link" title="More Details">
+                    <ion-icon name="link-outline"></ion-icon>
+                </a>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+        <!---------------------------------Contact-------------------------------- -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h1>Contact Us</h1>
+                </div>
+
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d140679.9951403412!2d36.99461739604087!3d-1.126513691018706!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1708677792152!5m2!1sen!2ske" 
+                    width="1200" height="300" style="border:0; width: 100%; height: 270px;" frameborder="0" allowfullscreen="" loading="lazy" 
+                    qreferrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="address">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <h4>Location:</h4>
+                                <p>Nairobi, Kenya</p>
+                            </div>
+                            <div class="email">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <h4>Email</h4>
+                                <p>skyrichevents@gmail.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <h4>Phone</h4>
+                                <p>0703456545</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input 
+                                type="text"
+                                class="form-control"
+                                placeholder="Subject"
+                                required
+                                >
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" id="message"  rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking" id="booking">
+            <div class="container">
+                <div class="row">
+                    <h1>Book Now</h1>
+                </div>
+
+                <div class="row">
+                    
+            
+
+
+                    <!-- Calendly  -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/skyrich-events/skyrich-events?
+                    hide_event_type_details=1&hide_gdpr_banner=1&text_color=black&primary_color=ff0066" 
+                    style="min-width:320px;height:950px;overflow-y: hidden;margin-top: 0.2rem;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                  
+
+
+                </div>
+            </div>
+        </section>
+
+</main>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="./assets/js/isotope.js"></script>
+
+    <script src="./assets/js/main.js" defer></script>
+
+
+      <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="./assets/js/glightbox.js" defer></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="./assets/js/isotope.js" defer></script>
+    
+</body>
+</html>

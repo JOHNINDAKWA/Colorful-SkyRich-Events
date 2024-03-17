@@ -461,7 +461,7 @@ header.active{
     .move-down{
         position: absolute;
         z-index: 1100;
-        color: #111111;
+        color: var(--primary1);
         animation: flink 1s linear infinite;
     }
 

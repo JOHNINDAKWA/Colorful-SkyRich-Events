@@ -336,6 +336,7 @@ header.active{
     transform: translate(0, 0) rotateZ(-720deg);
     opacity: 1;
     visibility: visible; 
+    
 } 
 .slider-loader{
     position: absolute;
@@ -397,7 +398,7 @@ header.active{
 
 .share{
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     left: 50px;
     display: flex;
     flex-direction: column;
@@ -1104,14 +1105,16 @@ margin-bottom: 50px;
         display: none;
     }
     .banner{
-        padding: 120px 30px;
+        padding: 80px 30px;
+        overflow-y: scroll;
     }
 
     .bg-slide .content{
-        width: 80vw;
+        width: 90vw;
+        padding: 25px 30px;
     }
     .bg-slide .content h1{
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     .bg-slide .content p{
         font-size: 0.8em;
@@ -1161,8 +1164,8 @@ margin-bottom: 50px;
 
     .slider-loader{
         
-        bottom: 80px;
-        right: 50px;
+        bottom: 70px;
+        right: 10px;
 
         margin-bottom: 20px;
     }
@@ -1202,12 +1205,12 @@ margin-bottom: 50px;
         margin: 20px 50px;
     }
     .banner-logo{
-        top: 110px;
+        top: 100px;
         left: 30%;
     }
 
     .banner-logo img{
-        width: 140px;
+        width: 100px;
     }
     .section-bg-img{
         bottom: 0;

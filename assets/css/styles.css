@@ -366,6 +366,7 @@ header.active{
 .slider-loader li a.active,
 .slider-loader li a:hover{
     font-size: 3em;
+    color: var(--primary1);
 }
 
   

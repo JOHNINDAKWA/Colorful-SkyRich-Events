@@ -1165,14 +1165,14 @@ margin-bottom: 50px;
 
     .slider-loader{
         
-        bottom: 70px;
+        bottom: 60px;
         right: 10px;
 
         margin-bottom: 20px;
     }
 
     .slider-loader li a{
-        font-size: 1em;
+        font-size: 1.4em;
 
     }
     
@@ -1211,7 +1211,7 @@ margin-bottom: 50px;
     }
 
     .banner-logo img{
-        width: 100px;
+        width: 120px;
     }
     .section-bg-img{
         bottom: 0;
